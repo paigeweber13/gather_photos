@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Photo Gallery</title></head>
+<body>
+  <h1>Uploaded Photos</h1>
+  {% for image in images %}
+    <img src="{{ image }}" style="max-width: 300px; margin: 10px;"><br>
+  {% endfor %}
+  <br>
+  <a href="/">Back to Upload</a>
+</body>
+</html>
