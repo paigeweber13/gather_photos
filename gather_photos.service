@@ -1,0 +1,15 @@
+[Unit]
+Description=Marley's Photo App!!
+After=network.target
+
+[Service]
+User=riley
+Group=riley
+WorkingDirectory=/home/riley/code/gather_photos_flask
+Environment="UPLOAD_PASSWORD=thepassword"
+ExecStart=/home/riley/code/gather_photos_flask/venv/bin/gunicorn -w 2 -b 127.0.0.1:8000 app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

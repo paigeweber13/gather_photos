@@ -2,5 +2,10 @@
 .DS_Store
 *.swp
 
+# python
+__pycache__
+
 # project-specific
 uploads
+venv
+

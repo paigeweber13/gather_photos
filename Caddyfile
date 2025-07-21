@@ -1,0 +1,4 @@
+photos.rileyshouse.gay {
+    reverse_proxy localhost:8000
+    encode gzip
+}
