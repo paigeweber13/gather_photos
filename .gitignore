@@ -1,0 +1,6 @@
+# generic
+.DS_Store
+*.swp
+
+# project-specific
+uploads
