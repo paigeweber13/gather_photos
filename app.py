@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, abort, send_from_directory
+from flask import Flask, request, redirect, render_template, redirect, abort, send_from_directory
 import os
 from werkzeug.utils import secure_filename
 
@@ -17,7 +17,7 @@ def upload():
             return "Incorrect password", 403
 
         username = secure_filename(request.form["name"])
-        files = request.files.getlist("photo")
+        files = request.files.getlist("photos_and_videos")
         user_dir = os.path.join(UPLOAD_FOLDER, username)
         os.makedirs(user_dir, exist_ok=True)
         for f in files:

@@ -8,13 +8,14 @@
   <div class="container-fluid my-3 mx-auto" style="width: 400px;">
   <h1>Marley's Photo Sharing Site</h1>
   <h2>Upload your Photos!!</h2>
+  <p>Videos are also allowed :)</p>
   <form method="post" enctype="multipart/form-data">
     <label>Your name:</label><br>
     <input type="text" name="name" required><br><br>
     <label>Password:</label><br>
     <input type="password" name="password" required><br><br>
     <label>Select photos:</label><br>
-    <input type="file" name="photo" accept="image/*" multiple required><br><br>
+    <input type="file" name="photos_and_videos" accept="image/*, video/*" multiple required><br><br>
     <button class="btn btn-primary" type="submit">Upload</button>
   </form>
   <br>
